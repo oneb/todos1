@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - ./frontend:/frontend
+      - ./certs:/certs
+    environment:
+      - DATABASE_URL=sqlite:///./todos.db
+    command: ./start.sh

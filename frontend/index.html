@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Sections will be filled in by script -->
+    <div class="container">
+        <h1>Todo App</h1>
+        
+        <div id="username-prompt">
+            <h2>Enter Your Username</h2>
+            <form id="username-form">
+                <input type="text" id="username-input" placeholder="Enter a username (does not need to exist yet)" required>
+                <button type="submit">Save Username</button>
+            </form>
+        </div>
+
+        <div id="tasks-display" class="hidden">
+            <div class="current-user">
+                <p>Current user: <span id="current-username"></span></p>
+                <button id="change-username">Change User</button>
+            </div>
+            
+            <div class="new-task-form">
+                <h2>Create New Task</h2>
+                <form id="new-task-form">
+                    <input type="text" id="task-title" placeholder="Task title..." required>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+
+            <div class="task-list">
+                <h2>Current Tasks</h2>
+                <ul id="tasks-container">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

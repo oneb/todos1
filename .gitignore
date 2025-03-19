@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.env
+
+# db
+*.sqlite
+*.db
+
+# certificates
+*.pem
+*.key
+*.crt
+
+# Docker
+.docker/
+
+# editor etc.
+.vscode/
+.DS_Store
+
+# misc
+/spec/
